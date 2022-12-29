@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+void swapValue(int x, int y){
+    int z;
+    z=y;
+    y=x;
+    x=z;
+    cout<<"Value After Swap: "<<endl;
+    cout<<"x: "<<x<<" ";
+    cout<<"y: "<<y;
+}
+int main(){
+    int x,y;
+    cout<<"Enter x: "<<" ";
+    cin>>x;
+    cout<<"Enter y: "<<" ";
+    cin>>y;
+    swapValue(x,y);
+}
