@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int number;
+    cout<<"Enter The No. To Find Its Cube: "<<endl;
+    cin>>number;
+
+    int cube = number*number*number;
+    cout<<"Cube: "<<cube;
+}
