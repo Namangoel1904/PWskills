@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    float lenght, breadth;
+    cout<<"Enter The Length Of Rectangle: "<<endl;
+    cin>>lenght;
+    cout<<"Enter The Breadth Of Rectangle: "<<endl;
+    cin>>breadth;
+
+    float Area = lenght*breadth;
+    cout<<"Area: "<<Area;
+}
