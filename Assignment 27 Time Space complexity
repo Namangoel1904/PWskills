@@ -1,0 +1,15 @@
+For First Code:
+    Time Complexity: O(N+M)   -(Worst Case)
+    Space Complexity:O(1)     -(Worst Case)
+    
+For Second Code:
+    Time Complexity: O(N^2) or O(N*N)  -(Worst Case)
+    
+For Third Code:
+    Time Complexity: O(N*LogN)   -(Worst Case)
+    
+For Fourth Code:
+    Time Complexity: O(LogN)   -(Worst Case)
+    
+For Fifth Code:
+    Time Complexity: O(LogKN)   -(Worst Case)
