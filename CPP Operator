@@ -1,0 +1,92 @@
+//First Problem Solution Code:
+//Write a program to check whether two numbers (entered by user) are equal or not.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<<"Enter Two Numbers To Compare: ";
+    int num1;
+    int num2;
+    cin>>num1>>num2;
+
+    if(num1==num2){
+        cout<<"1";
+    }
+    else{
+        cout<<"0";
+    }
+
+    return 0;
+}
+
+//Second Problem Solution Code:
+//Write a program to take the values of two variables a and b from the keyboard and then check if
+//both the conditions 'a < 50' and 'a < b' are true.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<<"Enter Two Numbers To Compare: ";
+    int a;
+    int b;
+    cin>>a>>b;
+
+    if(a<50 && a<b){
+        cout<<"0";
+    }
+    else{
+        cout<<"1";
+    }
+
+    return 0;
+}
+
+
+//Third Problem Solution Code:
+//There are 45 total pupils in the class, 25 of whom are boys. Write a program to find how many
+//girls received grades "A" if 17 boys made up 80% of the students that received grades "A".
+
+#include <iostream>
+int main()
+{
+	using namespace std;
+	int total, b, g;
+	b = 17;
+	total = (80*45)/100;  //total students getting grade A
+	g = total - b;        //number of girls getting grade A
+	cout << "Number of girls getting grade A = " << g << endl;
+	return 0;
+}
+
+//Fourth Problem Solution Code:
+//Write a program to calculate the sum of the first and the second last digit of a 5 digit number.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num;
+    cin>>num;
+    int x=0;
+    int j=10;
+    int sum=0;
+    for(int i=0; i<5; i++){
+        x=num%j;
+        if(x==(num%100)){
+            x=x/10;
+            sum+=x;
+        }
+        else if(x==(num%100000)){
+            x=x/10000;
+            sum+=x;
+        }
+        j*=10;
+    }
+    cout<<sum;
+    return 0;
+}
+
+//Fifth Problem Solution Code:
+//Write a program to calculate the sum of digits of a 3 digit number.
