@@ -1,0 +1,158 @@
+//First Problem Solution Code:
+//Write a program which takes the values of length and breadth from user and check if it is a square or not.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<<"ENter Length: ";
+    int len;
+    cin>>len;
+    cout<<"Enter Breadth: ";
+    int bre;
+    cin>>bre;
+    
+    if(len==bre){
+        cout<<"It Is a Square";
+    }
+    else{
+        cout<<"It Is a Rectangle";
+    }
+}
+
+//Second Problem Solution Code:
+//Write a program to print absolute value of a number entered by the user.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num;
+    cin>>num;
+
+    num=abs(num);
+    cout<<num;
+
+    return 0;
+}
+
+//Third Problem Solution Code:
+//Write a program to take input from user for Cost Price (C.P.) and Selling Price(S.P.) and calculate Profit or Loss.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    cout<<"Enter Cost Price: ";
+    int cp;
+    cin>>cp;
+    cout<<"Enter Selling Price: ";
+    int sp;
+    cin>>sp;
+
+    if(sp>cp){
+        int profit;
+        profit=sp-cp;
+        cout<<"Profit= "<<profit;
+    }
+    else{
+        int loss;
+        loss=cp-sp;
+        cout<<"loss= "<<loss;
+    }
+
+    return 0;
+
+}
+
+//Fourth Problem Solution :
+//Write a program to print positive number entered by the user, if user enters a negative number, it is skipped.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num;
+    cout<<"Enter an integer: ";
+    cin>>num;
+
+    if(num>-1){
+        cout<<num;
+    }
+    else{
+        cout<<"The number is negative and skipped";
+    }
+    return 0;
+}
+
+
+//Fifth Problem Solution Code:
+//Create a calculator using switch statement to perform addition, subtraction, multiplication and division.
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    string op;
+    cout<<"Enter an operator: ";
+    cin>>op;
+    int num1;
+    int num2;
+    cout<<"Enter Two numbers: "<<endl;
+    cin>>num1>>num2;
+
+    if(op=="*"){
+        cout<<num1*num2;
+    }
+    if(op=="/"){
+        cout<<num1/num2;
+    }
+    if(op=="+"){
+        cout<<num1+num2;
+    }
+    if(op=="-"){
+        cout<<num1-num2;
+    }
+
+    return 0;
+    
+}
+
+//Sixth Problem Solution Code:
+//Write a program to calculate marks to grades . Follow the conversion rule as given below :
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num;
+  cout << "Enter The Marks: ";
+  cin >> num;
+
+  if (0 <= num && num < 30) {
+    cout << "F";
+  }
+  if (30 <= num && num < 40) {
+    cout << "E";
+  }
+  if (40 <= num && num < 50) {
+    cout << "D";
+  }
+  if (50 <= num && num < 60) {
+    cout << "C";
+  }
+  if (60 <= num && num < 70) {
+    cout << "B";
+  }
+  if (70 <= num && num < 80) {
+    cout << "B+";
+  }
+  if (80 <= num && num < 90) {
+    cout << "A";
+  }
+  if (90 <= num && num <= 100) {
+    cout << "A++";
+  }
+
+  return 0;
+}
