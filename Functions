@@ -1,0 +1,144 @@
+//Q1 - Write a function to print squares of the first 5 natural numbers.
+
+//Solution Code:
+
+#include<iostream>
+using namespace std;
+
+int square_fun(){
+  for(int i=1; i<=5; i++){
+    int res=i*i;
+    cout<<(res)<<" ";
+  }
+  return 0;
+}
+
+int main(){
+  square_fun();
+}
+
+//__________________________________________________________________________________________________________________________________________________________________________
+
+//Q2 - Given radius of a circle. Write a function to print the area and circumference of the circle.
+
+//Solution Code:
+
+#include<iostream>
+using namespace std;
+
+float area_Cmf(float r){
+  float Area = (3.14*r*r);
+  float Circumference = (2*3.14*r);
+
+  cout<<"Area: "<<Area<<endl;
+  cout<<"Circumference: "<<Circumference<<endl;
+
+  return 0;
+}
+
+int main(){
+  float radius;
+  cout<<"Radius: ";
+  cin>>radius;
+
+  area_Cmf(radius);
+}
+
+//__________________________________________________________________________________________________________________________________________________________________________
+
+//Q3 - Given the age of a person, write a function to check if the person is eligible to vote or not.
+
+//Solution Code:
+
+#include<iostream>
+using namespace std;
+
+void check(int age){
+  if (age>=18){
+    cout<<"Yes";
+  }else if(age<=0) {
+    cout<<"Invalid Entry";
+  }
+  else{
+    cout<<"No";
+  }
+}
+
+int main(){
+  int age;
+  cout<<"Age: ";
+  cin>>age;
+  check(age);
+
+  return 0;
+}
+
+//__________________________________________________________________________________________________________________________________________________________________________
+
+//Q4 - Given two numbers a and b, write a program using functions to print all the odd numbers
+//between them.
+
+//Solution Code:
+
+#include <iostream>
+using namespace std;
+
+int Podd(int e1, int e2){
+  for (int i=e1; i<=e2; i++){
+    if(i%2 != 0){
+      cout<<i<<" ";
+    }
+  }
+  return 0;
+}
+
+int main(){
+  int e1;
+  int e2;
+  cin>>e1;
+  cin>>e2;
+
+  Podd(e1, e2);
+}
+
+//__________________________________________________________________________________________________________________________________________________________________________
+
+//Q5 - Given two numbers a and b, write a program to print all the prime numbers present between
+//a and b.
+
+//Solution Code:
+
+#include <iostream>
+using namespace std;
+
+int is_prime(int e1, int e2) {
+  bool flag = true;
+  if (e1 == 2) {
+    cout << e1 << " ";
+    e1++;
+  }
+  for (int i = e1; i <= e2; i++) {
+    for (int j = 2; j < i; j++) {
+      if (i % j == 0) {
+        flag = false;
+      }
+    }
+    if (flag == true) {
+      cout << i << " ";
+    }
+    flag = true;
+  }
+  return 0;
+}
+
+int main() {
+  int e1;
+  int e2;
+  cin >> e1;
+  cin >> e2;
+
+  is_prime(e1, e2);
+}
+
+
+Thank You!!
